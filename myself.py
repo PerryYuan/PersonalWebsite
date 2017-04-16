@@ -1,0 +1,15 @@
+# coding:utf8
+from flask import Flask
+import flask
+from exts import app
+
+
+
+
+@app.route('/')
+def hello_world():
+    return flask.render_template('index.html')
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
